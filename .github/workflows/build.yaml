@@ -1,4 +1,4 @@
-name: Java Build (CI)
+name: Java Build
 
 on: [push]
 
