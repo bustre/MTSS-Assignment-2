@@ -1,4 +1,5 @@
-[![Java Build](https://github.com/bustre/MTSS-Assignment-2-/badge.svg)](https://github.com/bustre/MTSS-Assignment-2-/actions/workflows/build.yml)
+[![Java Build](https://github.com/bustre/MTSS-Assignment-2-/actions/workflows/build.yml/badge.svg)](https://github.com/bustre/MTSS-Assignment-2-/actions/workflows/build.yml)
+[![codecov](https://codecov.io/gh/bustre/MTSS-Assignment-2-/branch/develop/graph/badge.svg?token=VQJDKNUSOK)](https://codecov.io/gh/bustre/MTSS-Assignment-2-)
 
 # MTSS Assignment 2
 
