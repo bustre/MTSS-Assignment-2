@@ -51,4 +51,23 @@ public class IntegerToRomanTest {
     assertEquals(res_4, "IV");
     assertEquals(res_6, "VI");
   }
+
+  @Test
+  public void testFirst10Number() {
+    // Arrange
+    String res_8;
+    String res_9;
+    String res_10;
+
+    // Act
+    res_8 = IntegerToRoman.converter(8);
+    res_9 = IntegerToRoman.converter(9);
+    res_10 = IntegerToRoman.converter(10);
+    
+    // Assert
+    assertEquals(res_8, "VIII");
+    assertEquals(res_9, "IX");
+
+    assertEquals(res_10, "X");
+  }
 }

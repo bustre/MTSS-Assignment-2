@@ -10,11 +10,13 @@ import java.util.TreeMap;
 public class IntegerToRoman {
 
   public final static int min = 1;
-  public final static int max = 6;
+  public final static int max = 10;
 
   private final static TreeMap<Integer, String> map = new TreeMap<Integer, String>();
 
   static {
+    map.put(10, "X");
+    map.put(9, "IX");
     map.put(5, "V");
     map.put(4, "IV");
     map.put(1, "I");

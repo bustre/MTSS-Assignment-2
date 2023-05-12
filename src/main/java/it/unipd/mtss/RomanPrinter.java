@@ -9,14 +9,14 @@ import java.util.Arrays;
 
 public class RomanPrinter {
 
-  static final String[] romanLetters = { "I", "V"};
+  static final String[] romanLetters = { "I", "V", "X"};
   static final String[][] romanPatterns = {
-      { " _____ ", "__      __"},
-      { "|_   _|", "\\ \\    / /"},
-      { "  | |  ", " \\ \\  / / "},
-      { "  | |  ", "  \\ \\/ /  "},
-      { " _| |_ ", "   \\  /   "},
-      { "|_____|", "    \\/    "}
+      { " _____ ", "__      __",   "__   __"   },
+      { "|_   _|", "\\ \\    / /", "\\ \\ / /" },
+      { "  | |  ", " \\ \\  / / ", " \\ V / " },
+      { "  | |  ", "  \\ \\/ /  ", "  >  < " },
+      { " _| |_ ", "   \\  /   ",  " / . \\ " },
+      { "|_____|", "    \\/    ",  "/_/\\ _\\" }
   };
 
   public static String print(int num) {
