@@ -5,53 +5,39 @@
 
 package it.unipd.mtss;
 
+import java.util.Arrays;
+
 public class RomanPrinter {
+
+  static final String[] romanLetters = { "I", "V"};
+  static final String[][] romanPatterns = {
+      { " _____ ", "__      __"},
+      { "|_   _|", "\\ \\    / /"},
+      { "  | |  ", " \\ \\  / / "},
+      { "  | |  ", "  \\ \\/ /  "},
+      { " _| |_ ", "   \\  /   "},
+      { "|_____|", "    \\/    "}
+  };
+
   public static String print(int num) {
     return printAsciiArt(IntegerToRoman.converter(num));
   }
 
-  private static String printAsciiArt(String romanNumber) {
+  public static String printAsciiArt(String romanNumber) {
     String[] container = romanNumber.split("");
-
     String result = "";
 
     for (int i = 0; i < 6; i++) {
-
       String line = "";
-
+      
       for (int j = 0; j < container.length; j++) {
-
-        if (container[j].equals("I")) {
-          switch (i) {
-            case 0:
-              line = line + (" _____ ");
-              break;
-
-              case 1:
-              line = line + ("|_   _|");
-              break;
-
-              case 2:
-              line = line + ("  | |  ");
-              break;
-
-              case 3:
-              line = line + ("  | |  ");
-              break;
-            
-              case 4:
-              line = line + (" _| |_ ");
-              break;
-
-              case 5:
-              line = line + ("|_____|");
-              break;
-          }
-        }
+        int index = Arrays.asList(romanLetters).indexOf(container[j]);
+        line += romanPatterns[i][index];
       }
       result = result + line + "\n";
     }
 
     return result;
   }
+
 }

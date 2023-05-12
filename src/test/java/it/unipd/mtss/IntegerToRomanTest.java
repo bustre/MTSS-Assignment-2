@@ -35,4 +35,20 @@ public class IntegerToRomanTest {
     assertEquals(res_2, "II");
     assertEquals(res_3, "III");
   }
+
+
+  @Test
+  public void testFirst6Number() {
+    // Arrange
+    String res_4;
+    String res_6;
+
+    // Act
+    res_4 = IntegerToRoman.converter(4);
+    res_6 = IntegerToRoman.converter(6);
+
+    // Assert
+    assertEquals(res_4, "IV");
+    assertEquals(res_6, "VI");
+  }
 }

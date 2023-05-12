@@ -25,12 +25,32 @@ public class RomanPrinterTest {
         " _| |_  _| |_  _| |_ " + "\n" +
         "|_____||_____||_____|" + "\n";
 
+    String result4 =
+    " _____ __      __"  + "\n" +
+    "|_   _|\\ \\    / /"  + "\n" +
+    "  | |   \\ \\  / / "  + "\n" +
+    "  | |    \\ \\/ /  "  + "\n" +
+    " _| |_    \\  /   "  + "\n" +
+    "|_____|    \\/    "  + "\n";
+
+    String result6 =
+    "__      __ _____ "  + "\n" +
+    "\\ \\    / /|_   _|"  + "\n" +
+    " \\ \\  / /   | |  "  + "\n" +
+    "  \\ \\/ /    | |  "  + "\n" +
+    "   \\  /    _| |_ "  + "\n" +
+    "    \\/    |_____|"  + "\n";
+
     // Act
     String value1 = RomanPrinter.print(1);
     String value3 = RomanPrinter.print(3);
+    String value4 = RomanPrinter.print(4);
+    String value6 = RomanPrinter.print(6);
 
     // Assert
     assertEquals(value1, result1);
     assertEquals(value3, result3);
+    assertEquals(value4, result4);
+    assertEquals(value6, result6);
   }
 }
