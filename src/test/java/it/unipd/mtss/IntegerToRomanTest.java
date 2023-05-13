@@ -121,4 +121,22 @@ public class IntegerToRomanTest {
     assertEquals(res_99, "XCIX");
     assertEquals(res_90,"XC");
   }
+
+  @Test
+  public void testFirst500Number() {
+    // Arrange
+    String res_500;
+    String res_488;
+    String res_243;
+
+    // Act
+    res_500 = IntegerToRoman.converter(500);
+    res_488 = IntegerToRoman.converter(488);
+    res_243 = IntegerToRoman.converter(243);
+    
+    // Assert
+    assertEquals(res_500, "D");
+    assertEquals(res_488, "CDLXXXVIII");
+    assertEquals(res_243,"CCXLIII");
+  }
 }

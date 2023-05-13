@@ -66,12 +66,22 @@ public class RomanPrinterTest {
         "/_/\\ _\\/_/\\ _\\/_/\\ _\\|_____|/_/\\ _\\" + "\n";
 
     String result99 =
-    "__   __  _____  _____ __   __" + "\n" + 
-    "\\ \\ / / / ____||_   _|\\ \\ / /" + "\n" +
-    " \\ V / | |       | |   \\ V / " + "\n" +
-    "  >  < | |       | |    >  < "  + "\n" +
-    " / . \\ | |____  _| |_  / . \\ "  + "\n" +
-    "/_/\\ _\\ \\_____||_____|/_/\\ _\\" + "\n";
+        "__   __  _____  _____ __   __" + "\n" + 
+        "\\ \\ / / / ____||_   _|\\ \\ / /" + "\n" +
+        " \\ V / | |       | |   \\ V / " + "\n" +
+        "  >  < | |       | |    >  < "  + "\n" +
+        " / . \\ | |____  _| |_  / . \\ "  + "\n" +
+        "/_/\\ _\\ \\_____||_____|/_/\\ _\\" + "\n";
+
+    String result488 = 
+        "  _____  _____    _      __   ____   ____   ____      __ _____  _____  _____ " + "\n" +
+        " / ____||  __ \\  | |     \\ \\ / /\\ \\ / /\\ \\ / /\\ \\    / /|_   _||_   _||_   _|" + "\n" +
+        "| |     | |  | | | |      \\ V /  \\ V /  \\ V /  \\ \\  / /   | |    | |    | |  " + "\n" +
+        "| |     | |  | | | |       >  <   >  <   >  <   \\ \\/ /    | |    | |    | |  " + "\n" +
+        "| |____ | |__| | | |____  / . \\  / . \\  / . \\    \\  /    _| |_  _| |_  _| |_ " + "\n" +
+        " \\_____||_____/  |______|/_/\\ _\\/_/\\ _\\/_/\\ _\\    \\/    |_____||_____||_____|" + "\n";
+
+    
     // Act
     String value1 = RomanPrinter.print(1);
     String value3 = RomanPrinter.print(3);
@@ -81,6 +91,7 @@ public class RomanPrinterTest {
     String value20 = RomanPrinter.print(20);
     String value39 = RomanPrinter.print(39);
     String value99 = RomanPrinter.print(99);
+    String value488 = RomanPrinter.print(488);
     
     // Assert
     assertEquals(value1, result1);
@@ -91,5 +102,6 @@ public class RomanPrinterTest {
     assertEquals(value20, result20);
     assertEquals(value39, result39);
     assertEquals(value99, result99);
+    assertEquals(value488, result488);
   }
 }
