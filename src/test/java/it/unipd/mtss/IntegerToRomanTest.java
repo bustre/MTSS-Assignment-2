@@ -103,4 +103,22 @@ public class IntegerToRomanTest {
     assertEquals(res_40, "XL");
     assertEquals(res_39,"XXXIX");
   }
+
+  @Test
+  public void testFirst100Number() {
+    // Arrange
+    String res_100;
+    String res_99;
+    String res_90;
+
+    // Act
+    res_100 = IntegerToRoman.converter(100);
+    res_99 = IntegerToRoman.converter(99);
+    res_90 = IntegerToRoman.converter(90);
+    
+    // Assert
+    assertEquals(res_100, "C");
+    assertEquals(res_99, "XCIX");
+    assertEquals(res_90,"XC");
+  }
 }
