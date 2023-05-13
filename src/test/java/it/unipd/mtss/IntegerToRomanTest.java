@@ -70,4 +70,19 @@ public class IntegerToRomanTest {
 
     assertEquals(res_10, "X");
   }
+
+  @Test
+  public void testFirst20Number() {
+    // Arrange
+    String res_19;
+    String res_20;
+
+    // Act
+    res_19= IntegerToRoman.converter(19);
+    res_20 = IntegerToRoman.converter(20);
+    
+    // Assert
+    assertEquals(res_19, "XIX");
+    assertEquals(res_20, "XX");
+  }
 }

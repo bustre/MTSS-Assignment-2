@@ -10,7 +10,7 @@ import java.util.TreeMap;
 public class IntegerToRoman {
 
   public final static int min = 1;
-  public final static int max = 10;
+  public final static int max = 20;
 
   private final static TreeMap<Integer, String> map = new TreeMap<Integer, String>();
 

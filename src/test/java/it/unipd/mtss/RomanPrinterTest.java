@@ -7,7 +7,7 @@ import org.junit.Test;
 public class RomanPrinterTest {
 
   @Test
-  public void TestPrintAsciiArt() {
+  public void TestPrint() {
     // Arrange
     String result1 = 
         " _____ " + "\n" +
@@ -49,18 +49,27 @@ public class RomanPrinterTest {
     " _| |_  / . \\ " + "\n" +
     "|_____|/_/\\ _\\" + "\n";
 
+    String result20 = 
+    "__   ____   __" + "\n" +
+    "\\ \\ / /\\ \\ / /" + "\n" +
+    " \\ V /  \\ V / " + "\n" +
+    "  >  <   >  < " + "\n" +
+    " / . \\  / . \\ " + "\n" +
+    "/_/\\ _\\/_/\\ _\\" + "\n";
+
     // Act
     String value1 = RomanPrinter.print(1);
     String value3 = RomanPrinter.print(3);
     String value4 = RomanPrinter.print(4);
     String value6 = RomanPrinter.print(6);
     String value9 = RomanPrinter.print(9);
-
+    String value20 = RomanPrinter.print(20);
     // Assert
     assertEquals(value1, result1);
     assertEquals(value3, result3);
     assertEquals(value4, result4);
     assertEquals(value6, result6);
     assertEquals(value9, result9);
+    assertEquals(value20, result20);
   }
 }
