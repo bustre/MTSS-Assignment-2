@@ -81,6 +81,13 @@ public class RomanPrinterTest {
         "| |____ | |__| | | |____  / . \\  / . \\  / . \\    \\  /    _| |_  _| |_  _| |_ " + "\n" +
         " \\_____||_____/  |______|/_/\\ _\\/_/\\ _\\/_/\\ _\\    \\/    |_____||_____||_____|" + "\n";
 
+    String result900 = 
+        "  _____  __  __ "  + "\n" +
+        " / ____||  \\/  |" + "\n" +
+        "| |     | \\  / |" + "\n" +
+        "| |     | |\\/| |" + "\n" +
+        "| |____ | |  | |"  + "\n" +
+        " \\_____||_|  |_|" + "\n";
     
     // Act
     String value1 = RomanPrinter.print(1);
@@ -92,7 +99,8 @@ public class RomanPrinterTest {
     String value39 = RomanPrinter.print(39);
     String value99 = RomanPrinter.print(99);
     String value488 = RomanPrinter.print(488);
-    
+    String value900 = RomanPrinter.print(900);
+
     // Assert
     assertEquals(value1, result1);
     assertEquals(value3, result3);
@@ -103,5 +111,6 @@ public class RomanPrinterTest {
     assertEquals(value39, result39);
     assertEquals(value99, result99);
     assertEquals(value488, result488);
+    assertEquals(value900, result900);
   }
 }

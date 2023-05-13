@@ -139,4 +139,19 @@ public class IntegerToRomanTest {
     assertEquals(res_488, "CDLXXXVIII");
     assertEquals(res_243,"CCXLIII");
   }
+
+  @Test
+  public void testFirst1000Number() {
+    // Arrange
+    String res_1000;
+    String res_999;
+
+    // Act
+    res_1000 = IntegerToRoman.converter(1000);
+    res_999 = IntegerToRoman.converter(999);
+    
+    // Assert
+    assertEquals(res_1000, "M");
+    assertEquals(res_999, "CMXCIX");
+  }
 }
