@@ -1,7 +1,6 @@
 package it.unipd.mtss;
 
 import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
 
 public class IntegerToRomanTest {
@@ -19,7 +18,7 @@ public class IntegerToRomanTest {
   }
 
   @Test
-  public void testFirst3Number() {
+  public void testFirst3Numbers() {
     // Arrange
     String res_1;
     String res_2;
@@ -36,9 +35,8 @@ public class IntegerToRomanTest {
     assertEquals(res_3, "III");
   }
 
-
   @Test
-  public void testFirst6Number() {
+  public void testFirst6Numbers() {
     // Arrange
     String res_4;
     String res_6;
@@ -53,7 +51,7 @@ public class IntegerToRomanTest {
   }
 
   @Test
-  public void testFirst10Number() {
+  public void testFirst10Numbers() {
     // Arrange
     String res_8;
     String res_9;
@@ -63,7 +61,7 @@ public class IntegerToRomanTest {
     res_8 = IntegerToRoman.converter(8);
     res_9 = IntegerToRoman.converter(9);
     res_10 = IntegerToRoman.converter(10);
-    
+
     // Assert
     assertEquals(res_8, "VIII");
     assertEquals(res_9, "IX");
@@ -72,22 +70,22 @@ public class IntegerToRomanTest {
   }
 
   @Test
-  public void testFirst20Number() {
+  public void testFirst20Numbers() {
     // Arrange
     String res_19;
     String res_20;
 
     // Act
-    res_19= IntegerToRoman.converter(19);
+    res_19 = IntegerToRoman.converter(19);
     res_20 = IntegerToRoman.converter(20);
-    
+
     // Assert
     assertEquals(res_19, "XIX");
     assertEquals(res_20, "XX");
   }
 
   @Test
-  public void testFirst50Number() {
+  public void testFirst50Numbers() {
     // Arrange
     String res_50;
     String res_40;
@@ -97,15 +95,15 @@ public class IntegerToRomanTest {
     res_50 = IntegerToRoman.converter(50);
     res_40 = IntegerToRoman.converter(40);
     res_39 = IntegerToRoman.converter(39);
-    
+
     // Assert
     assertEquals(res_50, "L");
     assertEquals(res_40, "XL");
-    assertEquals(res_39,"XXXIX");
+    assertEquals(res_39, "XXXIX");
   }
 
   @Test
-  public void testFirst100Number() {
+  public void testFirst100Numbers() {
     // Arrange
     String res_100;
     String res_99;
@@ -115,15 +113,15 @@ public class IntegerToRomanTest {
     res_100 = IntegerToRoman.converter(100);
     res_99 = IntegerToRoman.converter(99);
     res_90 = IntegerToRoman.converter(90);
-    
+
     // Assert
     assertEquals(res_100, "C");
     assertEquals(res_99, "XCIX");
-    assertEquals(res_90,"XC");
+    assertEquals(res_90, "XC");
   }
 
   @Test
-  public void testFirst500Number() {
+  public void testFirst500Numbers() {
     // Arrange
     String res_500;
     String res_488;
@@ -133,15 +131,15 @@ public class IntegerToRomanTest {
     res_500 = IntegerToRoman.converter(500);
     res_488 = IntegerToRoman.converter(488);
     res_243 = IntegerToRoman.converter(243);
-    
+
     // Assert
     assertEquals(res_500, "D");
     assertEquals(res_488, "CDLXXXVIII");
-    assertEquals(res_243,"CCXLIII");
+    assertEquals(res_243, "CCXLIII");
   }
 
   @Test
-  public void testFirst1000Number() {
+  public void testFirst1000Numbers() {
     // Arrange
     String res_1000;
     String res_999;
@@ -149,7 +147,7 @@ public class IntegerToRomanTest {
     // Act
     res_1000 = IntegerToRoman.converter(1000);
     res_999 = IntegerToRoman.converter(999);
-    
+
     // Assert
     assertEquals(res_1000, "M");
     assertEquals(res_999, "CMXCIX");
