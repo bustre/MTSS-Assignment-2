@@ -177,4 +177,9 @@ public class RomanPrinterTest {
 
         // Assert
     }
+
+    @Test(expected = IllegalArgumentException.class) 
+    public void testNullArg() {
+        RomanPrinter.printAsciiArt(null);
+    }
 }

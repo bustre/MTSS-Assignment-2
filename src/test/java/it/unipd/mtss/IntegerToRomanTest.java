@@ -8,13 +8,19 @@ public class IntegerToRomanTest {
   @Test(expected = IllegalArgumentException.class)
   public void testUnderflow() {
     // Act
-    IntegerToRoman.converter(0);
+    IntegerToRoman.converter(-20);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void testOverflow() {
     // Act
     IntegerToRoman.converter(IntegerToRoman.max + 1);
+  }
+
+  @Test(expected = IllegalArgumentException.class)
+  public void testZero() {
+    // Act
+    IntegerToRoman.converter(0); 
   }
 
   @Test

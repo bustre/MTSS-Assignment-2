@@ -24,6 +24,10 @@ public class RomanPrinter {
   }
 
   static String printAsciiArt(String romanNumber) {
+    if (romanNumber == null) {
+      throw new IllegalArgumentException("Roman number cannot be null");
+    }
+
     if (romanNumber.isEmpty()) {
       throw new IllegalArgumentException("String romanNumber cannot be empty");
     }
